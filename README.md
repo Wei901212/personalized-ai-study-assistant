@@ -29,7 +29,7 @@ The system consists of two main components:
 
 ---
 
-##How to Setup
+## How to Setup
 
 ### 1. Clone the repository
 
