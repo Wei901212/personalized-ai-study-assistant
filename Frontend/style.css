@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+        url("bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.app {
+    width: 900px;
+    max-width: 92%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-shadow: 0 0 12px red;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.78);
+    border: 1px solid red;
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.45);
+    text-align: left;
+}
+
+h2 {
+    color: #ff1a1a;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.profile-row {
+    display: flex;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ff1a1a;
+    background: rgba(10, 10, 10, 0.9);
+    color: white;
+    outline: none;
+    font-size: 15px;
+}
+
+textarea {
+    height: 90px;
+    resize: vertical;
+    margin-top: 15px;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 10px red;
+}
+
+#chatBox {
+    height: 330px;
+    overflow-y: auto;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+#chatBox div {
+    background: rgba(25, 25, 25, 0.92);
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    padding: 14px;
+    margin-bottom: 14px;
+    border-radius: 12px;
+    line-height: 1.5;
+}
+
+#chatBox strong {
+    color: #ff1a1a;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+button {
+    padding: 12px 28px;
+    border-radius: 8px;
+    border: 1px solid red;
+    background: linear-gradient(135deg, #d00000, #7a0000);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 15px red;
+    transform: scale(1.03);
+}
+
+.reset {
+    background: transparent;
+    color: #ff1a1a;
+}
+
+@media (max-width: 700px) {
+    .profile-row {
+        flex-direction: column;
+    }
+}

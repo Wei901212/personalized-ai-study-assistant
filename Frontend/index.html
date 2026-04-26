@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal AI Study Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>PERSONALIZED AI STUDY ASSISTANT</h1>
+    <p class="subtitle">Made By Wei Lun Chang</p>
+
+    <div class="card">
+        <h2>Your Profile</h2>
+
+        <div class="profile-row">
+            <input id="major" placeholder="Major">
+            <input id="year" placeholder="Year">
+            <input id="style" placeholder="Learning Style">
+        </div>
+    </div>
+
+    <div class="card chat-card">
+        <h2>Chat</h2>
+
+        <div id="chatBox"></div>
+
+        <textarea id="question" placeholder="Type your question here..."></textarea>
+
+        <div class="buttons">
+            <button onclick="sendQuestion()">Send</button>
+            <button onclick="resetConversation()" class="reset">Reset Chat</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
